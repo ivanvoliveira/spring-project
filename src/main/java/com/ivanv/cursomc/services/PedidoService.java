@@ -1,5 +1,6 @@
 package com.ivanv.cursomc.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,4 +22,8 @@ public class PedidoService {
 				"Objeto não encontrado! ID: " + id + ", Tipo: " + Pedido.class.getName()));
 	}
 	
+	public List<Pedido> buscarTodos() {
+		List<Pedido> obj = repo.findAll();
+		return obj;
+	}
 }
