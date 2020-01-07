@@ -27,5 +27,4 @@ public class CredenciaisDTO implements Serializable {
 		this.senha = senha;
 	}
 
-	
 }
